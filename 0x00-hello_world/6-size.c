@@ -10,13 +10,13 @@ int main(void)
 	char charSize;
 	int intSize;
 	long longSize;
-	long long twoLongSize;
+	long long twoLL;
 	float floatSize;
 
 	printf("Size of char: %lu byte(s)\n", (unsigned long)sizeof(charSize));
 	printf("Size of int: %lu byte(s)\n", (unsigned long)sizeof(intSize));
 	printf("Size of long int: %lu byte(s)\n", (unsigned long)sizeof(longSize));
-	printf("size of long long int: %lu byte(s)\n", (unsigned long)sizeof(twoLongSize));
+	printf("size of long long int: %lu byte(s)\n", (unsigned long)sizeof(twoLL));
 	printf("Size of float: %lu byte(s)\n", (unsigned long)sizeof(floatSize));
 	return (0);
 }
