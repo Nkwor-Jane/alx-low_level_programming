@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -13,7 +13,7 @@ int main(void)
 	count = 0;
 	i = 0;
 	j = 1;
-	for (count = 1; coung <= 91; count++)
+	for (count = 1; count <= 91; count++)
 	{
 		k = i + j;
 		i = j;
@@ -36,7 +36,7 @@ int main(void)
 		if (p >= 100)
 			printf("%lu%lu", k, p);
 		else
-			printf("lu0%lu", k, p);
+			printf("%lu0%lu", k, p);
 		if (count != 98)
 			printf(",");
 		count++;

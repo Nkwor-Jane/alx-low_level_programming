@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -10,7 +10,7 @@ int main(void)
 	long int fibonacci[50], sum = 2;
 
 	fibonacci[0] = 1;
-	fibonaaci[1] = 2;
+	fibonacci[1] = 2;
 
 	for (i = 2; i < 50; i++)
 	{
