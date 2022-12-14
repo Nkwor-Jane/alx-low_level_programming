@@ -22,14 +22,18 @@ void print_times_table(int n)
 					}
 					if (res < 10 && j != 0)
 					{
+						_putchar(',');
 						_putchar(' ');
 						_putchar(' ');
-						_putchar((res % 10) + '+');
+						_putchar(' ');
+						_putchar((res % 10) + '0');
 					}
 					else if (res >= 10 && res < 100)
 					{
+						_putchar(',');
 						_putchar(' ');
-						_putchar((res / 10) + 'o');
+						_putchar(' ');
+						_putchar((res / 10) + '0');
 						_putchar((res % 10) + '0');
 					}
 					else if (res >= 100 && j != 0)
@@ -44,4 +48,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-}
+}i
