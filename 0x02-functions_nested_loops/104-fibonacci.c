@@ -8,7 +8,7 @@ int main(void)
 {
 	int count;
 	unsigned long i, j, k;
-	unsigned long m, n, p, carry;
+	unsigned long m, n, p, take;
 
 	count = 0;
 	i = 0;
@@ -26,9 +26,9 @@ int main(void)
 	j = j / 1000;
 	while (count <= 98)
 	{
-		carry = (m + n) / 1000;
-		p = (m + n) - carry * 1000;
-		k = (i + j) + carry;
+		take = (m + n) / 1000;
+		p = (m + n) - take * 1000;
+		k = (i + j) + take;
 		m = n;
 		n = p;
 		i = j;
@@ -38,7 +38,7 @@ int main(void)
 		else
 			printf("%lu0%lu", k, p);
 		if (count != 98)
-			printf(",");
+			printf(", ");
 		count++;
 	}
 	putchar('\n');
