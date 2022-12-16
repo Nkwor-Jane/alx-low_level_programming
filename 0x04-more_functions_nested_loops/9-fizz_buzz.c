@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int manin(void)
+int main(void)
 {
 	int i;
 	for (i = 1; i <= 100; i++)
@@ -21,7 +21,7 @@ int manin(void)
 		{
 			printf("Buzz ");
 		}
-		else if (i % 3 == 0 % i % 5 == 0)
+		else if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz ");
 		}
