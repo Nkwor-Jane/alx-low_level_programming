@@ -6,7 +6,7 @@
  * _putchar - print result
  * Return: 0
  */
-void print_size(int size)
+void print_square(int size)
 {
 	int i, j;
 
@@ -17,8 +17,8 @@ void print_size(int size)
 			for (j = 0; j < size; j++)
 			{
 				_putchar('#');
-				_putchar('\n');
 			}
+			_putchar('\n');
 		}
 	}
 	else
