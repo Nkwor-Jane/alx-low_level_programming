@@ -10,7 +10,7 @@
 char *cap_string(char *c)
 {
 	int i, j;
-	char tabs = " \t\n,;.!?\"(){}";
+	char tabs[] = " \t\n,;.!?\"(){}";
 
 	i = 1;
 	if (c[0] >= 'a' && c[0] <= 'z')
@@ -18,8 +18,8 @@ char *cap_string(char *c)
 	while (c[i] != '\0')
 	{
 		for (j = 0; tabs[j] != '\0'; j++)
-		if (c[i - j] == tabs[j] && (caps[i] >= 'a' && c[i] <= 'z'))
-			c[i] = 'a' - 'A';
+		if (c[i - 1] == tabs[j] && (c[i] >= 'a' && c[i] <= 'z'))
+			c[i] -= 'a' - 'A';
 			i++;
 	}
 	return (c);

@@ -10,7 +10,7 @@ char *leet(char *c)
 	int i, j;
 	char enc[] = "aAeEoOtTlL";
 	char sub[] = "43071";
-	
+
 	for (i = 0; c[i] != '\0'; i++)
 	{
 		for (j = 0; enc[j] != '\0'; j++)
