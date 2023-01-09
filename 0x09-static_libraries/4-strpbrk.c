@@ -2,33 +2,27 @@
 #include <stdio.h>
 
 /**
- * _strspn - function that gets length of a prefix string
- * @s: initial segment
+ * _strpbrk - function thatsearches a string for any of a set of bytes
+ * @s: initial string
  * @accept: bytes to be accepted
  * Return: pointer to number of bytes
  */
-unsigned int _strspn(char *s, char *accept)
+char  *_strpbrk(char *s, char *accept)
 {
-	int count = 0, sign;
 	char *first = accept;
 
 	while (*s)
 	{
-		sign = 0;
 		while (*accept)
 		{
 			if (*accept == *s)
 			{
-				count++;
-				sign = 1;
-				break;
+				return (s);
 			}
 			 accept++;
 		}
-		s++;
 		accept = first;
-		if (sign == 0)
-			break;
+		s++;
 	}
-	return (count);
+	return (NULL);
 }
