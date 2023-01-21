@@ -9,8 +9,10 @@
  * @a: first integer
  * @b: second integer
  *
- *
- * struct op -STruct op
+ */
+
+/**
+ * struct op - Struct op
  *
  * @op: the operator
  * @f: function associated
