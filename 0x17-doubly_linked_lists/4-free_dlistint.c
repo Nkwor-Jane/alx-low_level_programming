@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * free_distint - function to free a dlistint list
+ * free_dlistint - function to free a dlistint list
  * @head: head of dlistint_t list
  */
 void free_dlistint(dlistint_t *head)
@@ -9,9 +9,10 @@ void free_dlistint(dlistint_t *head)
 
 	while (head != NULL)
 	{
+		temp = head;
 		temp = head->next;
 		temp->prev = NULL;
-		temp->head = NULL;
+		temp->next = NULL;
 		free(head);
 		head = temp;
 	}
