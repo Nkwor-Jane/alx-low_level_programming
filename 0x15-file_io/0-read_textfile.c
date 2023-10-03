@@ -18,8 +18,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (txt_file == -1)
 		return (0);
 	total = 0;
-	txt_read = 1;
-	while (letters > BUFSIZE && txt_read != 0)
+	txt_read = 0;
+	while (letters > BUFSIZE && txt_read > 0)
 	{
 		txt_read = read(txt_file, temp, BUFSIZE);
 		write(STDOUT_FILENO, temp, txt_read);
@@ -32,4 +32,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(txt_file);
 	return (total);
 }
-
